@@ -5,10 +5,10 @@ from django.contrib.auth.models import User
 class Post(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     image = models.ImageField()
-    date = models.DateField(auto_now=True)
+    date = models.DateField(auto_now_add=True)
 
 class ResponseAgainstPost(models.Model):
-    post = models.OneToOneField('self', on_delete=models.SET_NULL, null=True, blank=True)
+    post = models.OneToOneField(Post, on_delete=models.SET_NULL, null=True, blank=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     share = models.BooleanField(default=False)
     like = models.BooleanField(default=False)

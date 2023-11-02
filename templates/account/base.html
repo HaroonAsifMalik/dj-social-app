@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <ul>
+          <li><a href="{% url 'register' %}">Register</a></li>
+          <li><a href="{% url 'login' %}">Login</a></li>
+          {% comment %}
+          <li><a href="{% url 'home' %}">Home</a></li>
+          {% endcomment %} {% comment %}
+          <li><a href="{% url 'admin' %}">Admin</a></li>
+          {% endcomment %}
+        </ul>
+      </div>
+    </nav>
+
+    <div>{% block body_block %} {% endblock body_block %}</div>
+  </body>
+</html>

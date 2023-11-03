@@ -1,0 +1,55 @@
+
+/* Add CSS to style the registration form */
+.registration-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .registration-form {
+    margin-top: 10px;
+  }
+  
+  /* Style form elements */
+  .registration-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .registration-form input[type="text"],
+  .registration-form input[type="password"],
+  .registration-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  
+  .register-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  /* Style headings */
+  h1 {
+    color: #007bff;
+  }
+  
+  h3 {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+
+form {
+  margin-top: 20px;
+}

@@ -1,12 +1,16 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>Your Title Here</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'CSS/base.css' %}" />
+    {% block stylesheet %} {% endblock stylesheet %}
   </head>
   <body>
-    <nav>
+    <nav class="nav">
       <div>
         <ul>
           <li><a href="{% url 'register' %}">Register</a></li>
@@ -20,6 +24,6 @@
       </div>
     </nav>
 
-    <div>{% block body_block %} {% endblock body_block %}</div>
+    <div class="content">{% block body_block %} {% endblock body_block %}</div>
   </body>
 </html>

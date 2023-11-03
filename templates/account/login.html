@@ -1,5 +1,9 @@
-{% extends "account/base.html" %} {% block body_block %}
-<div>
+{% extends "account/base.html" %} {% load static %} {% block stylesheet %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'CSS/login.css' %}" />
+{% endblock stylesheet %} {% block body_block %}
+
+<div class="registration-container">
   <h1>Login Page</h1>
 
   <form action="{% url 'user_login' %}" method="post">

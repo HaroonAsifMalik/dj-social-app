@@ -1,4 +1,7 @@
-{% extends "base.html" %} {% block body_block %}
-
-<h1>Hello its register</h1>
-{% endblock %}
+{% extends "account/base.html" %} {% block body_block %}
+<div>
+  {% if request.session.message %}
+  <p>{{ request.session.message }}</p>
+  {% endif %}
+  <p>login</p>
+</div>
